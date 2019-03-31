@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<link rel="icon" href="http://ddragon.leagueoflegends.com/cdn/{{DataDragonVersion}}/img/profileicon/{{User['IconId']}}.png">
+	
+	<title>{{ User['Name'] }}</title>
+
+	<link rel="stylesheet" type="text/css" href="static/common.css">
+	<link rel="stylesheet" type="text/css" href="static/userpage.css">
+	<script type="text/javascript" src="static/userpage.js"></script>
+	<script type="text/javascript">
+		var MainRole = [];
+		MainRole[0] = "{{Role[0][0]}}";
+		MainRole[1] = "{{Role[1][0]}}";
+		Elo = "{{Elo}}";
+	</script>
+</head>
+
+<body>
+
+	<div class="PlayerCard AbsoluteCenter">
+		<img src="http://ddragon.leagueoflegends.com/cdn/{{DataDragonVersion}}/img/profileicon/{{User['IconId']}}.png">
+		<h2 class="UserName" >{{User['Name']}}</h2>
+		<h5>level</h5>
+		<div class="RoleContainer">
+			<img 
+				id= "{{Role[0][0]}}" 
+				alt= " " 
+				title= "Played {{Role[0][1]}} times last 20 matches."
+			>
+			<h4 class="UserLevel">{{User['Level']}}</h4>
+			<img id= "{{Role[1][0]}}"
+				alt= " " 
+				title= "Played {{Role[1][1]}} times last 20 matches."			
+			>
+		</div>
+
+		<div class="ButtonContainer">
+			<button>Ranked</button>
+			<button>Statistics</button>
+			<button>Overview</button>
+		</div>
+	</div>
+	
+	
+</body>
+
+</html>

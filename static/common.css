@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400');
+
+
+:root{
+	--NeutralBlack: #393E41;
+	--LightBlack: #6d6e70;
+	--EasyWhite: #fbf8fb;
+	
+	--SunsetOrange: #FF5E5B;
+	--Emerald: #1A936F;
+	--Aero: #C9EDDC;
+	--Purple: rgb(52, 18, 82);
+	
+	--TransparentPurple: rgba( 52, 18, 62, .3 );
+	--TransparentHardPurple: rgba( 62, 18, 62, .7 );
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	transition: .3s;
+	color: var(--NeutralBlack);
+}
+
+*::selection{
+	color: var(--EasyWhite);
+}
+
+.AbsoluteCenter{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, 50%);
+}
+
+.screen{
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	background: white;
+}
